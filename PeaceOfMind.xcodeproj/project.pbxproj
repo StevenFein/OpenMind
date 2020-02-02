@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		781A939C23E601E200F0B782 /* KDCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 781A939B23E601E200F0B782 /* KDCalendar */; };
+		781A939E23E6030800F0B782 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781A939D23E6030800F0B782 /* CalendarViewController.swift */; };
+		78C9EAAE23E56C4900FD9CD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C9EAAD23E56C4900FD9CD1 /* AppDelegate.swift */; };
+		78C9EAB023E56C4900FD9CD1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C9EAAF23E56C4900FD9CD1 /* SceneDelegate.swift */; };
+		78C9EAB223E56C4900FD9CD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C9EAB123E56C4900FD9CD1 /* ViewController.swift */; };
+		78C9EAB523E56C4900FD9CD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78C9EAB323E56C4900FD9CD1 /* Main.storyboard */; };
+		78C9EAB723E56C4F00FD9CD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78C9EAB623E56C4F00FD9CD1 /* Assets.xcassets */; };
+		78C9EABA23E56C4F00FD9CD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78C9EAB823E56C4F00FD9CD1 /* LaunchScreen.storyboard */; };
+		78C9EAC523E56C4F00FD9CD1 /* PeaceOfMindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C9EAC423E56C4F00FD9CD1 /* PeaceOfMindTests.swift */; };
+		78C9EAD023E56C4F00FD9CD1 /* PeaceOfMindUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C9EACF23E56C4F00FD9CD1 /* PeaceOfMindUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		78C9EAC123E56C4F00FD9CD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78C9EAA223E56C4900FD9CD1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78C9EAA923E56C4900FD9CD1;
+			remoteInfo = PeaceOfMind;
+		};
+		78C9EACC23E56C4F00FD9CD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78C9EAA223E56C4900FD9CD1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78C9EAA923E56C4900FD9CD1;
+			remoteInfo = PeaceOfMind;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		781A939D23E6030800F0B782 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		78C9EAAA23E56C4900FD9CD1 /* PeaceOfMind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeaceOfMind.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		78C9EAAD23E56C4900FD9CD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		78C9EAAF23E56C4900FD9CD1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		78C9EAB123E56C4900FD9CD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		78C9EAB423E56C4900FD9CD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		78C9EAB623E56C4F00FD9CD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		78C9EAB923E56C4F00FD9CD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		78C9EABB23E56C4F00FD9CD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78C9EAC023E56C4F00FD9CD1 /* PeaceOfMindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeaceOfMindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		78C9EAC423E56C4F00FD9CD1 /* PeaceOfMindTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeaceOfMindTests.swift; sourceTree = "<group>"; };
+		78C9EAC623E56C4F00FD9CD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78C9EACB23E56C4F00FD9CD1 /* PeaceOfMindUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeaceOfMindUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		78C9EACF23E56C4F00FD9CD1 /* PeaceOfMindUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeaceOfMindUITests.swift; sourceTree = "<group>"; };
+		78C9EAD123E56C4F00FD9CD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78C9EAA723E56C4900FD9CD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				781A939C23E601E200F0B782 /* KDCalendar in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78C9EABD23E56C4F00FD9CD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78C9EAC823E56C4F00FD9CD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		78C9EAA123E56C4900FD9CD1 = {
+			isa = PBXGroup;
+			children = (
+				78C9EAAC23E56C4900FD9CD1 /* PeaceOfMind */,
+				78C9EAC323E56C4F00FD9CD1 /* PeaceOfMindTests */,
+				78C9EACE23E56C4F00FD9CD1 /* PeaceOfMindUITests */,
+				78C9EAAB23E56C4900FD9CD1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		78C9EAAB23E56C4900FD9CD1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78C9EAAA23E56C4900FD9CD1 /* PeaceOfMind.app */,
+				78C9EAC023E56C4F00FD9CD1 /* PeaceOfMindTests.xctest */,
+				78C9EACB23E56C4F00FD9CD1 /* PeaceOfMindUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78C9EAAC23E56C4900FD9CD1 /* PeaceOfMind */ = {
+			isa = PBXGroup;
+			children = (
+				78C9EAAD23E56C4900FD9CD1 /* AppDelegate.swift */,
+				78C9EAAF23E56C4900FD9CD1 /* SceneDelegate.swift */,
+				78C9EAB123E56C4900FD9CD1 /* ViewController.swift */,
+				78C9EAB323E56C4900FD9CD1 /* Main.storyboard */,
+				781A939D23E6030800F0B782 /* CalendarViewController.swift */,
+				78C9EAB623E56C4F00FD9CD1 /* Assets.xcassets */,
+				78C9EAB823E56C4F00FD9CD1 /* LaunchScreen.storyboard */,
+				78C9EABB23E56C4F00FD9CD1 /* Info.plist */,
+			);
+			path = PeaceOfMind;
+			sourceTree = "<group>";
+		};
+		78C9EAC323E56C4F00FD9CD1 /* PeaceOfMindTests */ = {
+			isa = PBXGroup;
+			children = (
+				78C9EAC423E56C4F00FD9CD1 /* PeaceOfMindTests.swift */,
+				78C9EAC623E56C4F00FD9CD1 /* Info.plist */,
+			);
+			path = PeaceOfMindTests;
+			sourceTree = "<group>";
+		};
+		78C9EACE23E56C4F00FD9CD1 /* PeaceOfMindUITests */ = {
+			isa = PBXGroup;
+			children = (
+				78C9EACF23E56C4F00FD9CD1 /* PeaceOfMindUITests.swift */,
+				78C9EAD123E56C4F00FD9CD1 /* Info.plist */,
+			);
+			path = PeaceOfMindUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78C9EAA923E56C4900FD9CD1 /* PeaceOfMind */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78C9EAD423E56C4F00FD9CD1 /* Build configuration list for PBXNativeTarget "PeaceOfMind" */;
+			buildPhases = (
+				78C9EAA623E56C4900FD9CD1 /* Sources */,
+				78C9EAA723E56C4900FD9CD1 /* Frameworks */,
+				78C9EAA823E56C4900FD9CD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PeaceOfMind;
+			packageProductDependencies = (
+				781A939B23E601E200F0B782 /* KDCalendar */,
+			);
+			productName = PeaceOfMind;
+			productReference = 78C9EAAA23E56C4900FD9CD1 /* PeaceOfMind.app */;
+			productType = "com.apple.product-type.application";
+		};
+		78C9EABF23E56C4F00FD9CD1 /* PeaceOfMindTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78C9EAD723E56C4F00FD9CD1 /* Build configuration list for PBXNativeTarget "PeaceOfMindTests" */;
+			buildPhases = (
+				78C9EABC23E56C4F00FD9CD1 /* Sources */,
+				78C9EABD23E56C4F00FD9CD1 /* Frameworks */,
+				78C9EABE23E56C4F00FD9CD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78C9EAC223E56C4F00FD9CD1 /* PBXTargetDependency */,
+			);
+			name = PeaceOfMindTests;
+			productName = PeaceOfMindTests;
+			productReference = 78C9EAC023E56C4F00FD9CD1 /* PeaceOfMindTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		78C9EACA23E56C4F00FD9CD1 /* PeaceOfMindUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78C9EADA23E56C4F00FD9CD1 /* Build configuration list for PBXNativeTarget "PeaceOfMindUITests" */;
+			buildPhases = (
+				78C9EAC723E56C4F00FD9CD1 /* Sources */,
+				78C9EAC823E56C4F00FD9CD1 /* Frameworks */,
+				78C9EAC923E56C4F00FD9CD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78C9EACD23E56C4F00FD9CD1 /* PBXTargetDependency */,
+			);
+			name = PeaceOfMindUITests;
+			productName = PeaceOfMindUITests;
+			productReference = 78C9EACB23E56C4F00FD9CD1 /* PeaceOfMindUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78C9EAA223E56C4900FD9CD1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Steven Fein";
+				TargetAttributes = {
+					78C9EAA923E56C4900FD9CD1 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					78C9EABF23E56C4F00FD9CD1 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 78C9EAA923E56C4900FD9CD1;
+					};
+					78C9EACA23E56C4F00FD9CD1 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 78C9EAA923E56C4900FD9CD1;
+					};
+				};
+			};
+			buildConfigurationList = 78C9EAA523E56C4900FD9CD1 /* Build configuration list for PBXProject "PeaceOfMind" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 78C9EAA123E56C4900FD9CD1;
+			packageReferences = (
+				781A939A23E601E200F0B782 /* XCRemoteSwiftPackageReference "CalendarView" */,
+			);
+			productRefGroup = 78C9EAAB23E56C4900FD9CD1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78C9EAA923E56C4900FD9CD1 /* PeaceOfMind */,
+				78C9EABF23E56C4F00FD9CD1 /* PeaceOfMindTests */,
+				78C9EACA23E56C4F00FD9CD1 /* PeaceOfMindUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78C9EAA823E56C4900FD9CD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78C9EABA23E56C4F00FD9CD1 /* LaunchScreen.storyboard in Resources */,
+				78C9EAB723E56C4F00FD9CD1 /* Assets.xcassets in Resources */,
+				78C9EAB523E56C4900FD9CD1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78C9EABE23E56C4F00FD9CD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78C9EAC923E56C4F00FD9CD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78C9EAA623E56C4900FD9CD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				781A939E23E6030800F0B782 /* CalendarViewController.swift in Sources */,
+				78C9EAB223E56C4900FD9CD1 /* ViewController.swift in Sources */,
+				78C9EAAE23E56C4900FD9CD1 /* AppDelegate.swift in Sources */,
+				78C9EAB023E56C4900FD9CD1 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78C9EABC23E56C4F00FD9CD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78C9EAC523E56C4F00FD9CD1 /* PeaceOfMindTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78C9EAC723E56C4F00FD9CD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78C9EAD023E56C4F00FD9CD1 /* PeaceOfMindUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		78C9EAC223E56C4F00FD9CD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78C9EAA923E56C4900FD9CD1 /* PeaceOfMind */;
+			targetProxy = 78C9EAC123E56C4F00FD9CD1 /* PBXContainerItemProxy */;
+		};
+		78C9EACD23E56C4F00FD9CD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78C9EAA923E56C4900FD9CD1 /* PeaceOfMind */;
+			targetProxy = 78C9EACC23E56C4F00FD9CD1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		78C9EAB323E56C4900FD9CD1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78C9EAB423E56C4900FD9CD1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		78C9EAB823E56C4F00FD9CD1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78C9EAB923E56C4F00FD9CD1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		78C9EAD223E56C4F00FD9CD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		78C9EAD323E56C4F00FD9CD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		78C9EAD523E56C4F00FD9CD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DXN8KZPSHR;
+				INFOPLIST_FILE = PeaceOfMind/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Steven-Fein.PeaceOfMind";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		78C9EAD623E56C4F00FD9CD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DXN8KZPSHR;
+				INFOPLIST_FILE = PeaceOfMind/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Steven-Fein.PeaceOfMind";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		78C9EAD823E56C4F00FD9CD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PeaceOfMindTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Steven-Fein.PeaceOfMindTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeaceOfMind.app/PeaceOfMind";
+			};
+			name = Debug;
+		};
+		78C9EAD923E56C4F00FD9CD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PeaceOfMindTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Steven-Fein.PeaceOfMindTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeaceOfMind.app/PeaceOfMind";
+			};
+			name = Release;
+		};
+		78C9EADB23E56C4F00FD9CD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PeaceOfMindUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Steven-Fein.PeaceOfMindUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PeaceOfMind;
+			};
+			name = Debug;
+		};
+		78C9EADC23E56C4F00FD9CD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PeaceOfMindUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Steven-Fein.PeaceOfMindUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PeaceOfMind;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78C9EAA523E56C4900FD9CD1 /* Build configuration list for PBXProject "PeaceOfMind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78C9EAD223E56C4F00FD9CD1 /* Debug */,
+				78C9EAD323E56C4F00FD9CD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78C9EAD423E56C4F00FD9CD1 /* Build configuration list for PBXNativeTarget "PeaceOfMind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78C9EAD523E56C4F00FD9CD1 /* Debug */,
+				78C9EAD623E56C4F00FD9CD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78C9EAD723E56C4F00FD9CD1 /* Build configuration list for PBXNativeTarget "PeaceOfMindTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78C9EAD823E56C4F00FD9CD1 /* Debug */,
+				78C9EAD923E56C4F00FD9CD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78C9EADA23E56C4F00FD9CD1 /* Build configuration list for PBXNativeTarget "PeaceOfMindUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78C9EADB23E56C4F00FD9CD1 /* Debug */,
+				78C9EADC23E56C4F00FD9CD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		781A939A23E601E200F0B782 /* XCRemoteSwiftPackageReference "CalendarView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mmick66/CalendarView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		781A939B23E601E200F0B782 /* KDCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 781A939A23E601E200F0B782 /* XCRemoteSwiftPackageReference "CalendarView" */;
+			productName = KDCalendar;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 78C9EAA223E56C4900FD9CD1 /* Project object */;
+}
