@@ -47,6 +47,9 @@
                     <tabBarItem key="tabBarItem" title="Journal Entry" image="pencil" catalog="system" selectedImage="pencil" id="9Ky-qE-xaO"/>
                     <navigationItem key="navigationItem" id="jyS-F1-6vV"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="textField" destination="rDY-nD-RfV" id="jj0-7s-y8H"/>
+                    </connections>
                 </viewController>
                 <exit id="sob-g9-c0Q" userLabel="Exit" sceneMemberID="exit"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vHl-iW-K5H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

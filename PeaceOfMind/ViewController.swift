@@ -12,17 +12,18 @@ import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate, AVAudioRecorderDelegate, AVAudioPlayerDelegate{
     
-    @IBOutlet weak var moodSegment: UISegmentedControl!
-    @IBOutlet var recordingTimeLabel: UILabel!
-    @IBOutlet var record_btn_ref: UIButton!
-    @IBOutlet var play_btn_ref: UIButton!
+    @IBOutlet weak var moodSegment: UISegmentedControl?
+    @IBOutlet var recordingTimeLabel: UILabel?
+    @IBOutlet var record_btn_ref: UIButton?
+    @IBOutlet var play_btn_ref: UIButton?
+    @IBOutlet weak var textField: UITextView?
     
     //variable section for our audio permissions recorder
-    var audioRecorder: AVAudioRecorder!
-    var audioPlayer: AVAudioPlayer!
-    var audioCapture: AVCaptureDevice!
-    var meterTimer: Timer!
-    var isAudioRecordingGranted: Bool!
+    var audioRecorder: AVAudioRecorder?
+    var audioPlayer: AVAudioPlayer?
+    var audioCapture: AVCaptureDevice?
+    var meterTimer: Timer?
+    var isAudioRecordingGranted: Bool?
     var isRecording = false
     var isPlaying = false
     
@@ -32,7 +33,8 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioRecorderDele
         check_record_permission()
     }
     @IBAction func journalDone(_ sender: UIButton) {
-    
+        // resets the text field box
+        textField?.text = " "
     }
     
     override func viewDidLoad() {
@@ -51,7 +53,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioRecorderDele
     }
     
     @objc func moodSelected() {
-        moodSegment.selectedSegmentTintColor = .green
+        moodSegment?.selectedSegmentTintColor = .green
     }
     
     func HideKeyboard() {
@@ -108,7 +110,7 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioRecorderDele
     
     func setup_recorder()
     {
-        if isAudioRecordingGranted
+        if isAudioRecordingGranted ?? false
         {
             let session = AVAudioSession.sharedInstance()
             do
@@ -123,9 +125,9 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioRecorderDele
                     AVEncoderAudioQualityKey:AVAudioQuality.high.rawValue
                 ]
                 audioRecorder = try AVAudioRecorder(url: getFileUrl(), settings: settings)
-                audioRecorder.delegate = self
-                audioRecorder.isMeteringEnabled = true
-                audioRecorder.prepareToRecord()
+                audioRecorder?.delegate = self
+                audioRecorder?.isMeteringEnabled = true
+                audioRecorder?.prepareToRecord()
             }
             catch let error {
                 display_alert(msg_title: "Error", msg_desc: error.localizedDescription, action_title: "OK")
@@ -142,32 +144,32 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioRecorderDele
         if(isRecording)
         {
             finishAudioRecording(success: true)
-            record_btn_ref.setTitle("Record", for: .normal)
-            play_btn_ref.isEnabled = true
+            record_btn_ref?.setTitle("Record" ?? " ", for: .normal)
+            play_btn_ref?.isEnabled = true
             isRecording = false
         }
         else
         {
             setup_recorder()
 
-            audioRecorder.record()
+            audioRecorder?.record()
             meterTimer = Timer.scheduledTimer(timeInterval: 0.1, target:self, selector:#selector(self.updateAudioMeter(timer:)), userInfo:nil, repeats:true)
-            record_btn_ref.setTitle("Stop", for: .normal)
-            play_btn_ref.isEnabled = false
+            record_btn_ref?.setTitle("Stop" ?? " ", for: .normal)
+            play_btn_ref?.isEnabled = false
             isRecording = true
         }
     }
 
     @objc func updateAudioMeter(timer: Timer)
     {
-        if audioRecorder.isRecording
+        if audioRecorder?.isRecording ?? false
         {
-            let hr = Int((audioRecorder.currentTime / 60) / 60)
-            let min = Int(audioRecorder.currentTime / 60)
-            let sec = Int(audioRecorder.currentTime.truncatingRemainder(dividingBy: 60))
+            let hr = Int(((audioRecorder?.currentTime ?? 0) / 60) / 60)
+            let min = Int((audioRecorder?.currentTime ?? 0) / 60)
+            let sec = Int(audioRecorder?.currentTime.truncatingRemainder(dividingBy: 60) ?? 0)
             let totalTimeString = String(format: "%02d:%02d:%02d", hr, min, sec)
-            recordingTimeLabel.text = totalTimeString
-            audioRecorder.updateMeters()
+            recordingTimeLabel?.text = totalTimeString
+            audioRecorder?.updateMeters()
         }
     }
 
@@ -175,9 +177,9 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioRecorderDele
     {
         if success
         {
-            audioRecorder.stop()
+            audioRecorder?.stop()
             audioRecorder = nil
-            meterTimer.invalidate()
+            meterTimer?.invalidate()
             print("recorded successfully.")
         }
         else
@@ -191,8 +193,8 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioRecorderDele
         do
         {
             audioPlayer = try AVAudioPlayer(contentsOf: getFileUrl())
-            audioPlayer.delegate = self
-            audioPlayer.prepareToPlay()
+            audioPlayer?.delegate = self
+            audioPlayer?.prepareToPlay()
         }
         catch{
             print("Error")
@@ -203,19 +205,19 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioRecorderDele
     {
         if(isPlaying)
         {
-            audioPlayer.stop()
-            record_btn_ref.isEnabled = true
-            play_btn_ref.setTitle("Play", for: .normal)
+            audioPlayer?.stop()
+            record_btn_ref?.isEnabled = true
+            play_btn_ref?.setTitle("Play" ?? " ", for: .normal)
             isPlaying = false
         }
         else
         {
             if FileManager.default.fileExists(atPath: getFileUrl().path)
             {
-                record_btn_ref.isEnabled = false
-                play_btn_ref.setTitle("pause", for: .normal)
+                record_btn_ref?.isEnabled = false
+                play_btn_ref?.setTitle("pause" ?? " ", for: .normal)
                 prepare_play()
-                audioPlayer.play()
+                audioPlayer?.play()
                 isPlaying = true
             }
             else
@@ -232,12 +234,12 @@ class ViewController: UIViewController, UITextFieldDelegate, AVAudioRecorderDele
         {
             finishAudioRecording(success: false)
         }
-        play_btn_ref.isEnabled = true
+        play_btn_ref?.isEnabled = true
     }
 
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool)
     {
-        record_btn_ref.isEnabled = true
+        record_btn_ref?.isEnabled = true
     }
     
     //general function for displaying boxes
